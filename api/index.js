@@ -21,6 +21,10 @@ const options = {
     }
   }
 }
+
+app.get('/api',(req,res)=>{
+  res.send('Servidor listo')
+})
 app.use(cors(options));
 
 
